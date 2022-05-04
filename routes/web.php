@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics= config('comics');
+    $linkheader= config('linkheader');
+    $contentslink= config('contentslink');
+    dump($contentslink);
+    return view('guest.app', ['comics' => $comics], ['linkheader' => $linkheader], ['contentslink' => $contentslink]);
 });
