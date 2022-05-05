@@ -22,7 +22,7 @@
                 <div class="mini-card">
                     <span>{{ $icon['text'] }}</span>
                 <img
-                    src={{$icon['image']}}
+                    src={{asset($icon['image'])}}
                     alt={{$icon['text']}}
                 />
                 </div>

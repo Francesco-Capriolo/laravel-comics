@@ -6,13 +6,15 @@
     <section id="container">
         <h1>current series</h1>
         <div class="ms-container my-container">
-            @foreach ($comics as $item)
-                <div class="card-element">
-                    <img src={{$item['thumb']}} alt={{$item['title']}} />
-                    <h3>
-                    {{ $item['title'] }}
-                    </h3>
-                </div>
+            @foreach ($comics as $index => $item)
+                    <div class="card-element">
+                        <a href="{{url("detail/$index")}}">
+                            <img src={{$item['thumb']}} alt={{$item['title']}} />
+                            <h3>
+                            {{ $item['title'] }}
+                            </h3>
+                        </a>
+                    </div>
             @endforeach
         </div>
     </section>

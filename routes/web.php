@@ -18,14 +18,6 @@ Route::get('/', function () {
     $linkheader= config('linkheader');
     $contentslink= config('contentslink');
     $iconslink= config('iconslink');
-    return view('layouts.app', ['comics' => $comics, 'linkheader' => $linkheader, 'contentslink' => $contentslink,'iconslink' => $iconslink ]);
-});
-
-Route::get('/home', function () {
-    $comics= config('comics');
-    $linkheader= config('linkheader');
-    $contentslink= config('contentslink');
-    $iconslink= config('iconslink');
     return view('guest.main', ['comics' => $comics, 'linkheader' => $linkheader, 'contentslink' => $contentslink,'iconslink' => $iconslink ]);
 })->name('guest-home');
 
