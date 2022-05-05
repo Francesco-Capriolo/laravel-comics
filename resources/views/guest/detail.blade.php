@@ -1,30 +1,30 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'detail')
 
 @section('main-content')
     <section id="container">
-        <h1>current series</h1>
+        <div class="ms-image">
+            <img src={{$comics['thumb']}} alt={{$comics['title']}} />
+        </div>
         <div class="ms-container my-container">
-            @foreach ($comics as $item)
                 <div class="card-element">
-                    <img src={{$item['thumb']}} alt={{$item['title']}} />
+                    <img src={{$comics['thumb']}} alt={{$comics['title']}} />
                     <h3>
-                    {{ $item['title'] }}
+                    {{ $comics['title'] }}
                     </h3>
                 </div>
-            @endforeach
         </div>
     </section>
-    <div class="bg-primary">
-        <section id="Icons-dc" class="my-container">
+    <div class="bg-light">
+        <section id="Icons-dc-detail" class="my-container">
             @foreach ($iconslink as $icon)
                 <div class="mini-card">
+                    <span>{{ $icon['text'] }}</span>
                 <img
                     src={{$icon['image']}}
                     alt={{$icon['text']}}
                 />
-                <span>{{ $icon['text'] }}</span>
                 </div>
             @endforeach
         </section>

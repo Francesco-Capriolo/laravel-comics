@@ -74,7 +74,8 @@ section#head ul li a:hover, section#head ul li a.active {
   background-color: black;
   color: white;
 }
-#container h1 {
+#container h1,
+#container div.ms-image {
   position: absolute;
   top: 0;
   left: 50px;
@@ -94,6 +95,16 @@ section#head ul li a:hover, section#head ul li a.active {
 .card-element h3 {
   padding: 0.3rem;
   color: white;
+}
+
+#my-detail {
+  font-size: 12px;
+}
+#my-detail .bg-light {
+  background-color: lavender;
+}
+#my-detail #Icons-dc-detail {
+  color: gray;
 }
 
 .bg-primary {

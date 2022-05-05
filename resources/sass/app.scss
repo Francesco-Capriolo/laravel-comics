@@ -81,7 +81,8 @@ section#head {
     background-color: black;
     color: white;
 
-    h1 {
+    h1,
+    div.ms-image {
         position: absolute;
         top: 0;
         left: 50px;
@@ -90,6 +91,7 @@ section#head {
         padding: 0.5rem;
         color: white;
     }
+
 }
 
 //$ Card
@@ -105,6 +107,20 @@ section#head {
     h3 {
         padding: 0.3rem;
         color: white;
+    }
+}
+
+//$ detail
+
+#my-detail {
+    font-size: 12px;
+
+    .bg-light {
+        background-color: lavender;
+    }
+
+    #Icons-dc-detail {
+        color: gray;
     }
 }
 

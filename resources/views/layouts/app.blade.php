@@ -22,7 +22,8 @@
 @include('partials.header')
 
 <main>
-@yield('main-content')
+    @include('partials.jumbo')
+    @yield('main-content')
 </main>
 
 @include('partials.footer')
