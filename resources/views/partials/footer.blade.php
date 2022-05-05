@@ -6,7 +6,6 @@
             <h4>dc comics</h4>
             @foreach ($contentslink as $content)
             <li>
-                @dump($contentslink)
             {{$content['text']}}
             </li>
             @endforeach

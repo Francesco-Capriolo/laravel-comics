@@ -22,12 +22,11 @@
 @include('partials.header')
 
 <main>
-
+@yield('main-content')
 </main>
 
 @include('partials.footer')
 
-<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

@@ -25,43 +25,34 @@ section#head {
   height: 100px;
   justify-content: space-between;
 }
-
 section#head div {
   height: 100%;
   margin-left: 1rem;
 }
-
 section#head div img {
   width: 80%;
   min-width: 80px;
 }
-
 section#head ul {
   height: 100%;
   margin-right: 1rem;
   align-content: center;
 }
-
 section#head ul li {
   list-style-type: none;
   margin: 0 0.5rem;
   border-bottom: 2px solid transparent;
   line-height: 100px;
 }
-
-section#head ul li:hover,
-section#head ul li.active {
+section#head ul li:hover, section#head ul li.active {
   border-bottom: 2px solid #0282f9;
 }
-
 section#head ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
-
-section#head ul li a:hover,
-section#head ul li a.active {
+section#head ul li a:hover, section#head ul li a.active {
   color: #0282f9;
 }
 
@@ -83,7 +74,6 @@ section#head ul li a.active {
   background-color: black;
   color: white;
 }
-
 #container h1 {
   position: absolute;
   top: 0;
@@ -98,11 +88,9 @@ section#head ul li a.active {
   width: 14.2857142857%;
   margin: 0.5rem;
 }
-
 .card-element img {
   width: 100%;
 }
-
 .card-element h3 {
   padding: 0.3rem;
   color: white;
@@ -116,15 +104,12 @@ section#head ul li a.active {
   height: 100px;
   justify-content: space-evenly;
 }
-
 #Icons-dc div {
   height: 50%;
 }
-
 #Icons-dc img {
   height: 100%;
 }
-
 #Icons-dc span {
   color: white;
   padding: 1rem;
@@ -144,32 +129,27 @@ section#head ul li a.active {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #dc-footer .footer-list {
   display: flex;
   justify-content: flex-start;
   background-image: url("/img/dc-logo-bg.png");
-  background-size: no-repeat;
   background-position: right center;
   background-repeat: no-repeat;
+  font-size: 12px;
 }
-
 #dc-footer .footer-list ul {
   padding: 1rem 1rem;
 }
-
 #dc-footer .footer-list ul li {
   color: gray;
   list-style-type: none;
   padding: 0.2rem 0;
 }
-
 #dc-footer .footer-list ul h4 {
   color: white;
   padding: 0.5rem 0;
   text-transform: uppercase;
 }
-
 #dc-footer .footer-list .list-shop {
   padding-bottom: 3rem;
 }
@@ -184,7 +164,6 @@ section#head ul li a.active {
   justify-content: space-between;
   align-items: center;
 }
-
 #footer-bottom button {
   color: white;
   text-transform: uppercase;
@@ -193,19 +172,15 @@ section#head ul li a.active {
   padding: 1rem;
   margin-left: 1rem;
 }
-
 #footer-bottom .follow {
   display: flex;
 }
-
 #footer-bottom .follow h3 {
   color: #0282f9;
   padding-top: 1rem;
   padding-right: 1rem;
   text-transform: uppercase;
 }
-
 #footer-bottom .follow img {
   padding: 0.5rem;
 }
-
