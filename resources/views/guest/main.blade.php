@@ -3,9 +3,9 @@
 @section('title', 'Home')
 
 @section('main-content')
-    <section id="container">
+    <section id="container" class="bg-dark text-white">
         <h1>current series</h1>
-        <div class="ms-container my-container">
+        <div class="ms-container my-container align-center">
             @foreach ($comics as $index => $item)
                     <div class="card-element">
                         <a href="{{url("detail/$index")}}">

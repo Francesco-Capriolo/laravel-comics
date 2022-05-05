@@ -66,23 +66,77 @@ section#head ul li a:hover, section#head ul li a.active {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
+}
+.ms-container .align-center {
   text-align: center;
 }
 
 #container {
   position: relative;
-  background-color: black;
+}
+#container .text-white {
   color: white;
+}
+#container .bg-dark {
+  background-color: black;
+}
+#container .bg-white {
+  background-color: none;
+}
+#container .color-blue {
+  background-color: #0282f9;
+  height: 100px;
 }
 #container h1,
 #container div.ms-image {
   position: absolute;
   top: 0;
   left: 50px;
-  transform: translate(100%, -50%);
   background-color: #0282f9;
+}
+#container h1 {
+  transform: translate(100%, -50%);
   padding: 0.5rem;
+}
+#container .ms-image {
+  transform: translate(100%, -70%);
+  border: 1px solid white;
+}
+#container span.label,
+#container p.label {
   color: white;
+  text-transform: uppercase;
+  background-color: lightskyblue;
+}
+#container span.label {
+  top: 0;
+  position: absolute;
+}
+#container p.label {
+  text-align: center;
+}
+#container .info {
+  display: flex;
+}
+#container .info .info-text {
+  width: 70%;
+  padding: 1rem;
+}
+#container .info .info-text .info-price {
+  background-color: forestgreen;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+#container .info .info-text .info-price span.price {
+  color: lightgrey;
+}
+#container .info .info-text .info-price span.price a {
+  color: white;
+  text-decoration: none;
+}
+#container h2 {
+  text-transform: uppercase;
 }
 
 .card-element {
@@ -98,13 +152,39 @@ section#head ul li a:hover, section#head ul li a.active {
 }
 
 #my-detail {
-  font-size: 12px;
+  background-color: rgb(235, 234, 229);
 }
-#my-detail .bg-light {
-  background-color: lavender;
+#my-detail .d-flex {
+  display: flex;
+}
+#my-detail h4 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
 }
 #my-detail #Icons-dc-detail {
   color: gray;
+}
+#my-detail .partial-info {
+  width: 50%;
+  padding-left: 1rem;
+}
+#my-detail .partial-info div.info-name {
+  display: flex;
+  justify-content: space-between;
+}
+#my-detail .partial-info div.info-name .font-artist,
+#my-detail .partial-info div.info-name .info-specs {
+  width: 70%;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+#my-detail .partial-info div.info-name .text-blue {
+  color: #0282f9;
+}
+#my-detail .partial-info div.info-name .title-name {
+  width: 30%;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
 }
 
 .bg-primary {
