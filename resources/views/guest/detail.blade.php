@@ -28,7 +28,7 @@
                             {{$comics['description']}}
                         </p>
                     </div>
-                    <img src={{$comics['thumb']}} alt={{$comics['title']}} />
+                    <img src="{{ asset('img/adv.jpg') }}" alt="adv">
                 </div>
         </div>
         <div id="my-detail">
