@@ -140,7 +140,7 @@
 }
 #container .info .info-text .info-price {
   background-color: forestgreen;
-  padding: 0.5rem 0.3rem;
+  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
 }
