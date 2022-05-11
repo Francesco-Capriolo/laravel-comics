@@ -1,0 +1,205 @@
+.jumbo {
+    height: 400px;
+    background-image: url('/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+}
+
+.ms-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    .align-center {
+        text-align: center;
+    }
+
+}
+
+#container {
+    position: relative;
+
+    .text-white {
+        color: white;
+    }
+
+    .bg-dark {
+        background-color: black;
+    }
+
+    .bg-white {
+        background-color: none;
+    }
+
+    .color-blue {
+        background-color: $brandColor;
+        height: 100px;
+    }
+
+    h1,
+    div.ms-image {
+        position: absolute;
+        top: 0;
+        left: 50px;
+        background-color: $brandColor;
+
+    }
+
+    h1 {
+        transform: translate(100%, -50%);
+        padding: 0.5rem;
+    }
+
+    .ms-image {
+        transform: translate(100%, -70%);
+        border: 1px solid white;
+    }
+
+
+    //$detail
+
+
+    span.label,
+    p.label {
+        color: white;
+        text-transform: uppercase;
+        background-color: lightskyblue;
+    }
+
+    span.label {
+        top: 0;
+        position: absolute;
+    }
+
+    p.label {
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+
+        .info-text {
+            width: 70%;
+            padding: 1rem;
+
+            .info-price {
+                background-color: forestgreen;
+                padding: 0.5rem 0.3rem;
+                display: flex;
+                justify-content: space-between;
+
+                span.price {
+                    color: lightgrey;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+                .info-price-flex {
+                    width: 70%;
+                    border: 1px solid gray;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .info-price-flex,
+                .check {
+                    padding: 0.5rem;
+                }
+
+                .check {
+                    width: 30%;
+                    text-align: center;
+                    color: white;
+                }
+
+            }
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+//$detail
+
+.banner-info {
+    text-align: end;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.my-detail {
+    background-color: rgb(235, 234, 229);
+    border: 1px solid darkgray;
+
+    .d-flex {
+        display: flex;
+    }
+
+    h4 {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid gray;
+    }
+
+    #Icons-dc-detail {
+        color: gray;
+    }
+
+    .partial-info {
+        width: 50%;
+        padding-left: 1rem;
+
+        div.info-name {
+            display: flex;
+            justify-content: space-between;
+
+            .font-artist,
+            .info-specs {
+                width: 70%;
+                border-bottom: 1px solid gray;
+                padding: .5rem 0;
+            }
+
+            .text-blue {
+                color: #0282f9;
+            }
+
+            .title-name {
+                width: 30%;
+                border-bottom: 1px solid gray;
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    #icons-dc-detail,
+    #icons-dc-detail div {
+        border: 1px solid darkgray;
+
+    }
+
+    #icons-dc-detail {
+        display: flex;
+
+        div {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            text-transform: uppercase;
+            color: gray;
+        }
+
+        img {
+            height: 50px;
+            align-self: center;
+            padding-right: .5rem;
+            filter: grayscale(1);
+        }
+    }
+
+
+}

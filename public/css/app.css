@@ -9,51 +9,67 @@
   width: 80%;
 }
 
-section#head,
-section#head div,
-section#head ul,
-section#head li {
+#dc-footer {
+  height: 400px;
+  background-image: url("/img/footer-bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dc-footer .footer-list {
   display: flex;
+  justify-content: flex-start;
+  background-image: url("/img/dc-logo-bg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 12px;
+}
+#dc-footer .footer-list ul {
+  padding: 1rem 1rem;
+}
+#dc-footer .footer-list ul li {
+  color: gray;
+  list-style-type: none;
+  padding: 0.2rem 0;
+}
+#dc-footer .footer-list ul h4 {
+  color: white;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+#dc-footer .footer-list .list-shop {
+  padding-bottom: 3rem;
 }
 
-section#head,
-section#head div {
+.bg-dark {
+  background-color: #303030;
+}
+
+#footer-bottom {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-section#head {
-  height: 100px;
-  justify-content: space-between;
-}
-section#head div {
-  height: 100%;
+#footer-bottom button {
+  color: white;
+  text-transform: uppercase;
+  background-color: #303030;
+  border: 1px solid #0282f9;
+  padding: 1rem;
   margin-left: 1rem;
 }
-section#head div img {
-  width: 80%;
-  min-width: 80px;
+#footer-bottom .follow {
+  display: flex;
 }
-section#head ul {
-  height: 100%;
-  margin-right: 1rem;
-  align-content: center;
-}
-section#head ul li {
-  list-style-type: none;
-  margin: 0 0.5rem;
-  border-bottom: 2px solid transparent;
-  line-height: 100px;
-}
-section#head ul li:hover, section#head ul li.active {
-  border-bottom: 2px solid #0282f9;
-}
-section#head ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-section#head ul li a:hover, section#head ul li a.active {
+#footer-bottom .follow h3 {
   color: #0282f9;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+#footer-bottom .follow img {
+  padding: 0.5rem;
 }
 
 .jumbo {
@@ -135,8 +151,134 @@ section#head ul li a:hover, section#head ul li a.active {
   color: white;
   text-decoration: none;
 }
+#container .info .info-text .info-price .info-price-flex {
+  width: 70%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+#container .info .info-text .info-price .info-price-flex,
+#container .info .info-text .info-price .check {
+  padding: 0.5rem;
+}
+#container .info .info-text .info-price .check {
+  width: 30%;
+  text-align: center;
+  color: white;
+}
 #container h2 {
   text-transform: uppercase;
+}
+
+.banner-info {
+  text-align: end;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.my-detail {
+  background-color: rgb(235, 234, 229);
+  border: 1px solid darkgray;
+}
+.my-detail .d-flex {
+  display: flex;
+}
+.my-detail h4 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+.my-detail #Icons-dc-detail {
+  color: gray;
+}
+.my-detail .partial-info {
+  width: 50%;
+  padding-left: 1rem;
+}
+.my-detail .partial-info div.info-name {
+  display: flex;
+  justify-content: space-between;
+}
+.my-detail .partial-info div.info-name .font-artist,
+.my-detail .partial-info div.info-name .info-specs {
+  width: 70%;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.my-detail .partial-info div.info-name .text-blue {
+  color: #0282f9;
+}
+.my-detail .partial-info div.info-name .title-name {
+  width: 30%;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.my-detail #icons-dc-detail,
+.my-detail #icons-dc-detail div {
+  border: 1px solid darkgray;
+}
+.my-detail #icons-dc-detail {
+  display: flex;
+}
+.my-detail #icons-dc-detail div {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  text-transform: uppercase;
+  color: gray;
+}
+.my-detail #icons-dc-detail img {
+  height: 50px;
+  align-self: center;
+  padding-right: 0.5rem;
+  filter: grayscale(1);
+}
+
+section#head,
+section#head div,
+section#head ul,
+section#head li {
+  display: flex;
+}
+
+section#head,
+section#head div {
+  align-items: center;
+}
+
+section#head {
+  height: 100px;
+  justify-content: space-between;
+}
+section#head div {
+  height: 100%;
+  margin-left: 1rem;
+}
+section#head div img {
+  width: 80%;
+  min-width: 80px;
+}
+section#head ul {
+  height: 100%;
+  margin-right: 1rem;
+  align-content: center;
+}
+section#head ul li {
+  list-style-type: none;
+  margin: 0 0.5rem;
+  border-bottom: 2px solid transparent;
+  line-height: 100px;
+}
+section#head ul li:hover, section#head ul li.active {
+  border-bottom: 2px solid #0282f9;
+}
+section#head ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+section#head ul li a:hover, section#head ul li a.active {
+  color: #0282f9;
 }
 
 .card-element {
@@ -149,42 +291,6 @@ section#head ul li a:hover, section#head ul li a.active {
 .card-element h3 {
   padding: 0.3rem;
   color: white;
-}
-
-#my-detail {
-  background-color: rgb(235, 234, 229);
-}
-#my-detail .d-flex {
-  display: flex;
-}
-#my-detail h4 {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid gray;
-}
-#my-detail #Icons-dc-detail {
-  color: gray;
-}
-#my-detail .partial-info {
-  width: 50%;
-  padding-left: 1rem;
-}
-#my-detail .partial-info div.info-name {
-  display: flex;
-  justify-content: space-between;
-}
-#my-detail .partial-info div.info-name .font-artist,
-#my-detail .partial-info div.info-name .info-specs {
-  width: 70%;
-  border-bottom: 1px solid gray;
-  padding: 0.5rem 0;
-}
-#my-detail .partial-info div.info-name .text-blue {
-  color: #0282f9;
-}
-#my-detail .partial-info div.info-name .title-name {
-  width: 30%;
-  border-bottom: 1px solid gray;
-  padding: 0.5rem 0;
 }
 
 .bg-primary {
@@ -211,67 +317,4 @@ section#head ul li a:hover, section#head ul li a.active {
 .mini-card {
   display: flex;
   align-items: center;
-}
-
-#dc-footer {
-  height: 400px;
-  background-image: url("/img/footer-bg.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#dc-footer .footer-list {
-  display: flex;
-  justify-content: flex-start;
-  background-image: url("/img/dc-logo-bg.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  font-size: 12px;
-}
-#dc-footer .footer-list ul {
-  padding: 1rem 1rem;
-}
-#dc-footer .footer-list ul li {
-  color: gray;
-  list-style-type: none;
-  padding: 0.2rem 0;
-}
-#dc-footer .footer-list ul h4 {
-  color: white;
-  padding: 0.5rem 0;
-  text-transform: uppercase;
-}
-#dc-footer .footer-list .list-shop {
-  padding-bottom: 3rem;
-}
-
-.bg-dark {
-  background-color: #303030;
-}
-
-#footer-bottom {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#footer-bottom button {
-  color: white;
-  text-transform: uppercase;
-  background-color: #303030;
-  border: 1px solid #0282f9;
-  padding: 1rem;
-  margin-left: 1rem;
-}
-#footer-bottom .follow {
-  display: flex;
-}
-#footer-bottom .follow h3 {
-  color: #0282f9;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  text-transform: uppercase;
-}
-#footer-bottom .follow img {
-  padding: 0.5rem;
 }

@@ -17,21 +17,37 @@
                             {{$comics['title']}}
                         </h2>
                         <div class="info-price">
-                            <span class="price">
-                                U.S. Price: <a href=""> {{$comics['price']}}</a>
-                            </span>
-                            <span class="price">
-                                AVAILABLE
-                            </span>
+                            <div class="info-price-flex">
+                                <span class="price">
+                                    U.S. Price: <a href=""> {{$comics['price']}}</a>
+                                </span>
+                                <span class="price">
+                                    AVAILABLE
+                                </span>
+                            </div>
+                            <div class="check">
+                                <span>
+                                    Check Availability
+                                </span>
+                            </div>
                         </div>
                         <p>
                             {{$comics['description']}}
                         </p>
                     </div>
-                    <img src="{{ asset('img/adv.jpg') }}" alt="adv">
+                    <div>
+                        <h4 class="banner-info">
+                            advertisement
+                        </h4>
+                        <img src="{{ asset('img/adv.jpg') }}" alt="adv">
+                    </div>
+
                 </div>
         </div>
-        <div id="my-detail">
+
+        {{-- dettagli comic --}}
+
+        <div class="my-detail">
             <div class="my-container ms-container d-flex">
                 <div class="partial-info">
                     <h4>
@@ -102,19 +118,35 @@
             </div>
         </div>
 
+        {{-- icons --}}
+
+        <div class="my-detail">
+            <section id="icons-dc-detail" class="my-container">
+                <div>
+                    <span>
+                        digital comics
+                    </span>
+                    <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+                </div>
+                <div>
+                    <span>
+                        shop dc
+                    </span>
+                    <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+                </div>
+                <div>
+                    <span>
+                        comic shop locator
+                    </span>
+                    <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+                </div>
+                <div>
+                    <span>
+                        subscriptions
+                    </span>
+                    <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+                </div>
+        </section>
         </div>
     </section>
-    {{-- <div class="bg-light">
-        <section id="Icons-dc-detail" class="my-container">
-            @foreach ($iconslink as $icon)
-                <div class="mini-card">
-                    <span>{{ $icon['text'] }}</span>
-                <img
-                    src={{asset($icon['image'])}}
-                    alt={{$icon['text']}}
-                />
-                </div>
-            @endforeach
-        </section>
-    </div> --}}
 @endsection
